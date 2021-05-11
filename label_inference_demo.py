@@ -11,7 +11,7 @@ from unsplit.util import *
 
 
 dataset = sys.argv[1]
-count = int(sys.argv[2])
+count = 100
 
 # load datasets and initialize client, server, and clone models
 # set the split values so that the client model (second part) has depth of one.
