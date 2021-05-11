@@ -5,9 +5,9 @@ import torch
 from torchvision import transforms, datasets
 from torchvision.utils import save_image
 
-import attacks
-from models import *
-from util import *
+import unsplit.attacks as unsplit
+from unsplit.models import *
+from unsplit.util import *
 
 
 dataset = sys.argv[1]
@@ -68,7 +68,7 @@ for idx, (image, label) in enumerate(testloader):
     clone_pred = clone(server_out, start=split_layer+1)
 
     # try out all possible labels and pick the one that produces the closest gradient values
-    pred_label = attacks.label_inference(clone_pred, clone, target_grad, label_vals, grad_index)
+    pred_label = unsplit.label_inference(clone_pred, clone, target_grad, label_vals, grad_index)
 
     results.append(label.item() == pred_label.item())
     print(f'Label: {label.item()} - Predicted: {pred_label.item()}')

@@ -6,9 +6,9 @@ import torch
 from torchvision import transforms, datasets
 from torchvision.utils import save_image
 
-import attacks
-from models import *
-from util import *
+import unsplit.attacks as unsplit
+from unsplit.models import *
+from unsplit.util import *
 
 
 dataset = sys.argv[1]
@@ -74,7 +74,7 @@ for idx, target in enumerate(targetloader):
     client_out = client(target, end=split_layer)
 
     # perform the attack
-    result = attacks.model_inversion_stealing(clone, split_layer, client_out, target.size(),
+    result = unsplit.model_inversion_stealing(clone, split_layer, client_out, target.size(),
                                                 main_iters=1000, input_iters=100, model_iters=100)
 
     # save result

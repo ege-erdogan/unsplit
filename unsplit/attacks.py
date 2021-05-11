@@ -2,8 +2,7 @@ import numpy as np
 import torch
 from torchvision import transforms, datasets
 
-from models import *
-from util import *
+from .util import *
 
 def model_inversion_stealing(clone_model, split_layer, target, input_size, 
                             lambda_tv=0.1, lambda_l2=1, main_iters=1000, input_iters=100, model_iters=100):
