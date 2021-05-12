@@ -78,6 +78,8 @@ for idx, target in enumerate(targetloader):
                                                 main_iters=1000, input_iters=100, model_iters=100)
 
     # save result
+    if dataset == 'cifar':
+        result = normalize(result)
     results.append(result)
     loss = mse(result, target)
     losses.append(loss)

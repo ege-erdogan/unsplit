@@ -75,3 +75,13 @@ def display_imagelist(images, height, width):
         ax[index].axis('off')
         ax[index].imshow(image.cpu().detach().reshape(height, width))
     plt.show()
+
+
+def display_cifar(images):
+    fig, ax = plt.subplots(1, len(images))
+    for index, image in enumerate(images):
+        img = torchvision.utils.make_grid(image)
+        ax[index].axis('off')
+        npimg = img.cpu().detach().numpy()
+        ax[index].imshow(np.transpose(npimg, (1,2,0)))
+    plt.show()
