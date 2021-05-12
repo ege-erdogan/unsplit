@@ -6,7 +6,9 @@ TODO: Link to paper
 
 ## Code
 
-The repository includes two Python files demonstrating our two attacks: `label_inference_demo.py` and `model_inversion_demo.py`. To ensure that you have the necessary dependencies, first run this command:
+We provide to Jupyter notebooks that interactively demonstrate the attacks: `model_inversion_stealing.ipynb` and `label_inference.ipynb`.
+
+Furthermore, the repository includes two Python files that can be directly run to experiment with the attacks: `label_inference_demo.py` and `model_inversion_demo.py`. To ensure that you have the necessary dependencies, first run this command:
 ```
 pip install -r requirements.txt
 ```
