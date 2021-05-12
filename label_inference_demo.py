@@ -31,7 +31,7 @@ elif dataset == 'cifar':
     trainset = datasets.CIFAR10('data/cifar', download=True, train=True, transform=transforms.ToTensor())
     testset = datasets.CIFAR10('data/cifar', download=True, train=False, transform=transforms.ToTensor())
     client, server, clone = CifarNet(), CifarNet(), CifarNet()
-    split_layer = 17
+    split_layer = 16
     grad_index = 14
 
 trainloader = torch.utils.data.DataLoader(trainset, shuffle=True, batch_size=64)
