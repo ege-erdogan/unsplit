@@ -14,7 +14,8 @@ pip install -r requirements.txt
 Once the requirements are satisfied, the demos can be run with the following commands:
 ```bash
 python model_inversion_demo.py <dataset> <split_depth>
-
+```
+```bash
 python label_inference_demo.py <dataset>
 ```
 For now, our implementation supports MNIST(`mnist`), Fashion-MNIST(`f_mnist`), and CIFAR10(`cifar`) datasets for benchmarking. The `split_depth` field corresponds to the depth of the client model. Enter a value between `1` and `6` for MNIST datasets and a value between `1` and `8` for the CIFAR10 dataset.
