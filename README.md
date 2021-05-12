@@ -6,7 +6,7 @@ TODO: Link to paper
 
 ## Code
 
-We provide to Jupyter notebooks that interactively demonstrate the attacks: `model_inversion_stealing.ipynb` and `label_inference.ipynb`.
+We provide two Jupyter notebooks that interactively demonstrate the attacks: `model_inversion_stealing.ipynb` and `label_inference.ipynb`.
 
 Furthermore, the repository includes two Python files that can be directly run to experiment with the attacks: `label_inference_demo.py` and `model_inversion_demo.py`. To ensure that you have the necessary dependencies, first run this command:
 ```
