@@ -30,12 +30,20 @@ The `unsplit` directory contains the following files that implement the attacks:
 
 ## Cite Our Work
 ```
-@article{erdogan2021unsplit,
-      title={UnSplit: Data-Oblivious Model Inversion, Model Stealing, and Label Inference Attacks Against Split Learning}, 
-      author={Ege Erdogan and Alptekin Kupcu and A. Ercument Cicek},
-      year={2021},
-      eprint={2108.09033},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR}
+@inproceedings{10.1145/3559613.3563201,
+author = {Erdo\u{g}an, Ege and K\"{u}p\c{c}\"{u}, Alptekin and \c{C}i\c{c}ek, A. Erc\"{u}ment},
+title = {UnSplit: Data-Oblivious Model Inversion, Model Stealing, and Label Inference Attacks against Split Learning},
+year = {2022},
+isbn = {9781450398732},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3559613.3563201},
+doi = {10.1145/3559613.3563201},
+booktitle = {Proceedings of the 21st Workshop on Privacy in the Electronic Society},
+pages = {115–124},
+numpages = {10},
+keywords = {machine learning, split learning, label leakage, model inversion, model stealing, data privacy},
+location = {Los Angeles, CA, USA},
+series = {WPES'22}
 }
 ```
